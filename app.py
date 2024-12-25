@@ -1,3 +1,7 @@
+import nltk
+import os
+from flask import Flask, render_template, request
+
 # Download necessary NLTK data
 nltk.download('vader_lexicon')
 nltk.download('punkt')
@@ -5,9 +9,7 @@ nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('stopwords')
 
-import os
-import nltk
-from flask import Flask, render_template, request
+
 import text2emotion as te
 from nltk.sentiment import SentimentIntensityAnalyzer
 from nltk.stem import WordNetLemmatizer
