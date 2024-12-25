@@ -1,3 +1,10 @@
+# Download necessary NLTK data
+nltk.download('vader_lexicon')
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('stopwords')
+
 import os
 import nltk
 from flask import Flask, render_template, request
@@ -11,12 +18,6 @@ import contractions
 from googletrans import Translator
 from langdetect import detect, DetectorFactory
 
-# Download necessary NLTK data
-# nltk.download('vader_lexicon')
-# nltk.download('punkt')
-# nltk.download('wordnet')
-# nltk.download('averaged_perceptron_tagger')
-# nltk.download('stopwords')
 
 # Map POS tags to WordNet format
 def get_wordnet_pos(tag):
