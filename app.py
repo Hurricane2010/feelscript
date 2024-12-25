@@ -4,10 +4,11 @@ from flask import Flask, render_template, request
 
 # Download necessary NLTK data
 nltk.download('punkt_tab')
-# nltk.download('vader_lexicon')
-# nltk.download('wordnet')
-# nltk.download('averaged_perceptron_tagger')
-# nltk.download('stopwords')
+nltk.download('vader_lexicon')
+nltk.download('wordnet')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('averaged_perceptron_tagger_eng')
+nltk.download('stopwords')
 
 
 import text2emotion as te
