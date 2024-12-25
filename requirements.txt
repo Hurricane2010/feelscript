@@ -4,3 +4,4 @@ googletrans==4.0.0rc1
 langdetect==1.0.9
 nltk==3.9.1
 text2emotion==0.0.5
+gunicorn
