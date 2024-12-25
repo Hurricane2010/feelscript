@@ -3,11 +3,11 @@ import os
 from flask import Flask, render_template, request
 
 # Download necessary NLTK data
-nltk.download('vader_lexicon')
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('stopwords')
+# nltk.download('punkt')
+# nltk.download('vader_lexicon')
+# nltk.download('wordnet')
+# nltk.download('averaged_perceptron_tagger')
+# nltk.download('stopwords')
 
 
 import text2emotion as te
