@@ -3,7 +3,7 @@ import os
 from flask import Flask, render_template, request
 
 # Download necessary NLTK data
-# nltk.download('punkt')
+nltk.download('punkt_tab')
 # nltk.download('vader_lexicon')
 # nltk.download('wordnet')
 # nltk.download('averaged_perceptron_tagger')
